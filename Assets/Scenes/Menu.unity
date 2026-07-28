@@ -1388,7 +1388,6 @@ GameObject:
   - component: {fileID: 988869948}
   - component: {fileID: 988869953}
   - component: {fileID: 988869952}
-  - component: {fileID: 988869954}
   m_Layer: 0
   m_Name: DesktopCamera
   m_TagString: Untagged
@@ -1543,22 +1542,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54566f511d4f9494d8ac0b4abe9c99f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MouseLook
-  mouseSensitivity: 100
---- !u!114 &988869954
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 988869947}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 05e6206588a055344bea1a2cc7e01ccc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::GazePointer
-  interactableLayer:
-    serializedVersion: 2
-    m_Bits: 8
+  mouseSensitivity: 200
 --- !u!1 &1001881445
 GameObject:
   m_ObjectHideFlags: 0
