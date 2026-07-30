@@ -34,7 +34,7 @@ public class Gun : MonoBehaviour
         }
         Vector3 direction = (targetPoint - transform.position).normalized;
         bulletPivot.forward = direction;
-        GameObject bullet = PoolManager.Instance.GetObject(bulletPrefab, bulletPivot.position);
+        GameObject bullet = PoolManager.Instance.GetObject(bulletPrefab, bulletPivot.position, true);
         bullet.SetActive(false);
         bullet.transform.position = bulletPivot.position;
         bullet.transform.LookAt(targetPoint);
