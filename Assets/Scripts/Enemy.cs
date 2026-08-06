@@ -1,23 +1,53 @@
 using UnityEngine;
-
+using System.Collections;
+using UnityEngine.Events;
+ 
 public class Enemy : MonoBehaviour
 {
     private Health health;
     protected Animator animator;
+    private Collider objectCollider;
     protected bool IsDead => health.CurrentHealth <= 0;
+    private UnityEvent<Transform> onDeath = new UnityEvent<Transform>();
+    public UnityEvent<Transform> Ondeath => onDeath;
     [SerializeField]
     protected Transform target;
-    public Transform Target { set { target = value; } }
-    protected enum State { Active, Dead}
+    [SerializeField]
+    protected string destroyAnimationName = "Destroy";
+    [SerializeField]
+    private string destroySoundName = "asteroid_explode";
+    [SerializeField]
+    private string appearSoundName;
+    public Transform Target {set{target = value; } }
+    protected enum State{ Active,Dead}
     protected State currentState;
     private void Awake()
     {
         health = GetComponent<Health>();
         animator = GetComponent<Animator>();
+        objectCollider = GetComponent<Collider>();
     }
     public virtual void OnEnable()
     {
+        SoundManager.instance.Play("asteroid_appear");
         health.InitializeHealth();
         currentState = State.Active;
     }
+    public virtual void Destroy()
+    {
+        StopAllCoroutines();
+        StartCoroutine(DestroyCoroutine());
+    }
+    private IEnumerator DestroyCoroutine()
+    {
+        currentState = State.Dead;
+        SoundManager.instance.Play(destroySoundName);
+        onDeath?.Invoke(transform);
+        objectCollider.enabled = false;
+        animator.Play(destroyAnimationName, 0 ,0f);
+        yield return animator.WaitForCurrentAnimation();
+        onDeath.RemoveAllListeners();
+        gameObject.SetActive(false);
+    }
+    public virtual void PositionEnemy(){}
 }

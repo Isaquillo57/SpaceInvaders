@@ -1,5 +1,5 @@
 using UnityEngine;
-
+ 
 public class Gun : MonoBehaviour
 {
     private Camera cameraUsed;
@@ -35,8 +35,6 @@ public class Gun : MonoBehaviour
         Vector3 direction = (targetPoint - transform.position).normalized;
         bulletPivot.forward = direction;
         GameObject bullet = PoolManager.Instance.GetObject(bulletPrefab, bulletPivot.position, true);
-        bullet.SetActive(false);
-        bullet.transform.position = bulletPivot.position;
         bullet.transform.LookAt(targetPoint);
         bullet.SetActive(true);
         animator.Play("Shoot", 0, 0f);

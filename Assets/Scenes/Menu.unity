@@ -755,11 +755,14 @@ MonoBehaviour:
       m_Calls: []
   onPointerExit:
     m_PersistentCalls:
+      m_Calls: []
+  onPointerClick:
+    m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2133887795}
-        m_TargetAssemblyTypeName: SceneController, Assembly-CSharp
-        m_MethodName: GoToSceneWithFade
-        m_Mode: 5
+      - m_Target: {fileID: 11400000, guid: 70da8633db107c8459b49ea6c7bdfd77, type: 2}
+        m_TargetAssemblyTypeName: LevelManager, Assembly-CSharp
+        m_MethodName: SetLevelIndex
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -768,9 +771,6 @@ MonoBehaviour:
           m_StringArgument: Game
           m_BoolArgument: 0
         m_CallState: 2
-  onPointerClick:
-    m_PersistentCalls:
-      m_Calls:
       - m_Target: {fileID: 130543870}
         m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
         m_MethodName: Play
