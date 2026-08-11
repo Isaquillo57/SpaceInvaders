@@ -1107,7 +1107,19 @@ MonoBehaviour:
         m_CallState: 2
   onDie:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1350053292}
+        m_TargetAssemblyTypeName: WinScreen, Assembly-CSharp
+        m_MethodName: ShowLoseScreen
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &628214647
 GameObject:
   m_ObjectHideFlags: 0
@@ -1432,6 +1444,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: eb5d6b16f9106ce498e3cacbe05665b0, type: 3}
       propertyPath: m_Name
       value: gemitest2
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: eb5d6b16f9106ce498e3cacbe05665b0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2093,10 +2109,22 @@ MonoBehaviour:
   onEnemyDestroy:
     m_PersistentCalls:
       m_Calls: []
-  target: {fileID: 988869951}
+  target: {fileID: 609680627}
   onAllEnemiesDestroyed:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1350053292}
+        m_TargetAssemblyTypeName: WinScreen, Assembly-CSharp
+        m_MethodName: ShowWinScreen
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &1302863621 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7453040899979414415, guid: 4025d371b129b5240974788d9a2cfaf3, type: 3}
