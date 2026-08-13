@@ -17,7 +17,7 @@ public class Pool : MonoBehaviour
             {
                 currentObject.SetActive(true);
             }
-
+            
             currentObject.transform.position = position;
             currentObject.transform.rotation = Quaternion.identity;
         }
@@ -42,6 +42,10 @@ public class Pool : MonoBehaviour
         obj.SetActive(false);
         poolStack.Push(obj);
         activeObjects.Remove(obj);
+    }
+    public void InstantiateObjectOn(Transform parent)
+    {
+        InstantiateObject(parent.position, false);
     }
     public void DeactivateAllObjects()
     {

@@ -12,19 +12,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0406c13ee048d459101d726f3e33ca, type: 3}
   m_Name: LevelManager
   m_EditorClassIdentifier: Assembly-CSharp::LevelManager
-  levelIndex: 1
+  levelIndex: 4
   levels:
   - enemiesData:
     - enemyPrefab: {fileID: 8893130240205840361, guid: 2a382a6b29ab51544a78a4511d3f7722, type: 3}
       spawnTime: 3
     - enemyPrefab: {fileID: 8893130240205840361, guid: 2a382a6b29ab51544a78a4511d3f7722, type: 3}
-      spawnTime: 5
-    - enemyPrefab: {fileID: 8893130240205840361, guid: 2a382a6b29ab51544a78a4511d3f7722, type: 3}
-      spawnTime: 8
+      spawnTime: 6
     - enemyPrefab: {fileID: 8893130240205840361, guid: 2a382a6b29ab51544a78a4511d3f7722, type: 3}
       spawnTime: 10
+    - enemyPrefab: {fileID: 4328198049484479323, guid: c27680f9f352c6646b7752219541c662, type: 3}
+      spawnTime: 15
   - enemiesData:
-    - enemyPrefab: {fileID: 8893130240205840361, guid: 2a382a6b29ab51544a78a4511d3f7722, type: 3}
+    - enemyPrefab: {fileID: 4328198049484479323, guid: c27680f9f352c6646b7752219541c662, type: 3}
       spawnTime: 3
     - enemyPrefab: {fileID: 8893130240205840361, guid: 2a382a6b29ab51544a78a4511d3f7722, type: 3}
       spawnTime: 5
@@ -32,3 +32,49 @@ MonoBehaviour:
       spawnTime: 8
     - enemyPrefab: {fileID: 8893130240205840361, guid: 2a382a6b29ab51544a78a4511d3f7722, type: 3}
       spawnTime: 10
+    - enemyPrefab: {fileID: 8893130240205840361, guid: 2a382a6b29ab51544a78a4511d3f7722, type: 3}
+      spawnTime: 16
+    - enemyPrefab: {fileID: 4328198049484479323, guid: c27680f9f352c6646b7752219541c662, type: 3}
+      spawnTime: 19
+  - enemiesData:
+    - enemyPrefab: {fileID: 8893130240205840361, guid: 2a382a6b29ab51544a78a4511d3f7722, type: 3}
+      spawnTime: 3
+    - enemyPrefab: {fileID: 8893130240205840361, guid: 2a382a6b29ab51544a78a4511d3f7722, type: 3}
+      spawnTime: 5
+    - enemyPrefab: {fileID: 8893130240205840361, guid: 2a382a6b29ab51544a78a4511d3f7722, type: 3}
+      spawnTime: 8
+    - enemyPrefab: {fileID: 4328198049484479323, guid: c27680f9f352c6646b7752219541c662, type: 3}
+      spawnTime: 10
+    - enemyPrefab: {fileID: 8893130240205840361, guid: 2a382a6b29ab51544a78a4511d3f7722, type: 3}
+      spawnTime: 12
+    - enemyPrefab: {fileID: 8893130240205840361, guid: 2a382a6b29ab51544a78a4511d3f7722, type: 3}
+      spawnTime: 18
+    - enemyPrefab: {fileID: 4328198049484479323, guid: c27680f9f352c6646b7752219541c662, type: 3}
+      spawnTime: 21
+    - enemyPrefab: {fileID: 4328198049484479323, guid: c27680f9f352c6646b7752219541c662, type: 3}
+      spawnTime: 25
+  - enemiesData:
+    - enemyPrefab: {fileID: 8893130240205840361, guid: 2a382a6b29ab51544a78a4511d3f7722, type: 3}
+      spawnTime: 3
+    - enemyPrefab: {fileID: 4328198049484479323, guid: c27680f9f352c6646b7752219541c662, type: 3}
+      spawnTime: 5
+    - enemyPrefab: {fileID: 8893130240205840361, guid: 2a382a6b29ab51544a78a4511d3f7722, type: 3}
+      spawnTime: 8
+    - enemyPrefab: {fileID: 4328198049484479323, guid: c27680f9f352c6646b7752219541c662, type: 3}
+      spawnTime: 10
+    - enemyPrefab: {fileID: 4328198049484479323, guid: c27680f9f352c6646b7752219541c662, type: 3}
+      spawnTime: 12
+    - enemyPrefab: {fileID: 8893130240205840361, guid: 2a382a6b29ab51544a78a4511d3f7722, type: 3}
+      spawnTime: 15
+    - enemyPrefab: {fileID: 8893130240205840361, guid: 2a382a6b29ab51544a78a4511d3f7722, type: 3}
+      spawnTime: 18
+    - enemyPrefab: {fileID: 4328198049484479323, guid: c27680f9f352c6646b7752219541c662, type: 3}
+      spawnTime: 20
+    - enemyPrefab: {fileID: 4328198049484479323, guid: c27680f9f352c6646b7752219541c662, type: 3}
+      spawnTime: 21
+    - enemyPrefab: {fileID: 8893130240205840361, guid: 2a382a6b29ab51544a78a4511d3f7722, type: 3}
+      spawnTime: 23
+    - enemyPrefab: {fileID: 8893130240205840361, guid: 2a382a6b29ab51544a78a4511d3f7722, type: 3}
+      spawnTime: 25
+    - enemyPrefab: {fileID: 8893130240205840361, guid: 2a382a6b29ab51544a78a4511d3f7722, type: 3}
+      spawnTime: 27

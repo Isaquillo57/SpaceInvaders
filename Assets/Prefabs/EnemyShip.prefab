@@ -229,7 +229,7 @@ MonoBehaviour:
   damage: 60
   distanceFromTarget: 25
   pathLength: 300
-  bulletPrefab: {fileID: 6017702559024665510, guid: 3bd7ccd6dd7f4654d931519aa9b7ca64, type: 3}
+  bulletPrefab: {fileID: 6017702559024665510, guid: adece306c4ed9a2439fac803c243286d, type: 3}
   bulletPivot: {fileID: 5463325132258033816}
   randomDistanceMultiplier: 0.3
   shootSoundName: shoot
